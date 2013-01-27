@@ -35,6 +35,7 @@ int addFunction()
         higher = inputVal2;
     }
     
+    /* in case there are 2 equal inputs, then this program will word unexpectedly */
     for(int i = lower; i <= higher; ++i)
     {
         sum += i;
@@ -44,7 +45,8 @@ int addFunction()
 }
 int main(int argc, char** argv) {
 
-    cout << "the add result is:" << addFunction << endl;
+    cout << "starting the add function" << endl;
+    cout << "the result is:" << addFunction() << endl;
     return 0;
 }
 
