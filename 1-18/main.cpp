@@ -67,7 +67,7 @@ void printProperFromInput()
 }
 int main(int argc, char** argv) {
     
-    cout << "the result is :"<< endl;
+    cout << "the result of this test is :"<< endl;
     printProperFromInput();
     return 0;
 }
