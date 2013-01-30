@@ -21,8 +21,14 @@ void addSalesInfo()
     Sales_item salesItem1, salesItem2;
     cout <<"starting input the ISBN, sales price and the average price." << endl;
     cin >> salesItem1 >> salesItem2;
-    
-    cout << "the added result are:" << salesItem1 + salesItem2 << endl;
+    if(salesItem1.same_isbn(salesItem2))
+    {
+        cout << "the added result are:" << salesItem1 + salesItem2 << endl;
+    }
+    else
+    {
+        cout << "the input ISBN is dintinct, please check this." << endl;
+    }
 }
 int main(int argc, char** argv) {
 
