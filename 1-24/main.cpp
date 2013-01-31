@@ -23,6 +23,7 @@ void tractionStatistic()
 {
     Sales_item firstItem;
     Sales_item newItem;
+    int amount = 1;
     
     if(cin >> firstItem)
     {
@@ -30,17 +31,21 @@ void tractionStatistic()
         {  
             if (newItem.same_isbn(firstItem))
             {
-                firstItem += newItem;    
+                firstItem += newItem;
+                ++amount;
             }
             else
             {
                 cout << "the transaction for the previous one is: "<< firstItem << endl; 
+                cout << "the previous transaction count is: "<< amount << endl; 
                 /* used for next comparison */
                 firstItem = newItem;
+                amount = 1;
             }
         }
         
-        cout << "the final transaction count is: " << firstItem << endl;
+        cout << "the final transaction is: " << firstItem << endl;
+        cout << "the final transaction count is: " << amount << endl;
     }
     else
     {
