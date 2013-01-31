@@ -44,8 +44,8 @@ void tractionStatistic()
             }
         }
         
-        cout << "the final transaction is: " << firstItem << endl;
-        cout << "the final transaction count is: " << amount << endl;
+        cout << "the last time transaction is: " << firstItem << endl;
+        cout << "the last transaction count is: " << amount << endl;
     }
     else
     {
