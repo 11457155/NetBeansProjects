@@ -31,7 +31,12 @@ void tractionStatistic()
         {  
             if (newItem.same_isbn(firstItem))
             {
-                firstItem += newItem;
+                /* The original expression is like this: */
+                firstItem = firstItem + newItem;
+                
+                /* rather than this one*/
+                //firstItem += newItem;
+                
                 ++amount;
             }
             else
