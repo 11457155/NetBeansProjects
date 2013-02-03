@@ -21,6 +21,11 @@ void loopVariableTest()
         sum += i;
     cout << "the value of i is: " << i << "\t and the value of sum is: " << sum\
             <<endl;
+    
+    double test = 3.1314;
+    const int &ref = test;
+    cout << "the original double type value is: " << test << "\t and the reference value is:" \
+<< ref << endl;
 }
 
 void variableJudgement()
