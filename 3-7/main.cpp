@@ -41,11 +41,14 @@ void judgeStringSize()
     string input1, input2;
     cin >> input1 >> input2;
     
-    if(input1.size() == input2.size())
+    string::size_type  input1Size= input1.size();
+    string::size_type  input2Size= input2.size();
+    
+    if(input1Size == input2Size)
     {
         cout << "these two input are equal" << endl;
     }
-    else if(input1.size() > input2.size())
+    else if(input1Size > input2Size)
     {
         cout << "input1's size is longer" << endl;
     }
