@@ -7,6 +7,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -20,8 +21,12 @@ void raisingResult()
     int base, exponent;
     long result = 1;
     cout << "please input the value of base and the exponent: \n";
-    cin >> base >> exponent;
+    string testString(10, 'a');
     
+    cout << "the content of testString is: " << testString << endl;
+    
+    cin >> base >> exponent;
+ 
     for(int count = 1; count <= exponent; ++count)
     {
         result *= base;
