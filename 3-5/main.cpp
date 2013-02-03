@@ -20,14 +20,26 @@ void readStringInput()
 {
     string lineInput;
     string wordInput;
-    
+    string test;
    
     cout << "now starting output the string word by word! and the value is: " << endl;
     
-    while(getline(cin, wordInput))
+    if(getline(cin, wordInput))
     {
         cout << wordInput << endl;
     }
+    
+    cout << "now input the same string as the previous one " << endl;
+    cin >> test;
+    
+    if(wordInput.size() == test.size())
+    {
+        cout << "true" << endl;
+    }
+    else
+         cout << "false" << endl;
+    
+   
   
     #if 0 
     cout << "the line input string is: " << endl;
