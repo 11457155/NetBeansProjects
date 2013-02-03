@@ -32,7 +32,7 @@ void readStringInput()
     cout << "now input the same string as the previous one " << endl;
     cin >> test;
     
-    if(wordInput.size() == test.size())
+    if(wordInput == test)
     {
         cout << "true" << endl;
     }
