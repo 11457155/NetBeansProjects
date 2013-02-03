@@ -18,11 +18,11 @@ using namespace std;
 void printRequired2M()
 {
     cout << "start printing the first output." << endl;
-    cout  << "2M \n";
+    cout  << "2M" << "\n";
     
     cout << "start printing the second output."<< endl;
-    cout << "2 \t\
-M\n";
+    cout << '2' << '\t' << \
+'M' << '\n';
     cout << "this is the end of the program." << endl;
 }
 
