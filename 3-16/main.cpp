@@ -21,6 +21,7 @@ void vectorInitialization()
     vector<int>vecTest1(10,42);
     vector<int>vecTest2;
     vector<int>vecTest3(10);
+    vector<int>vecTest4(10);
     
     for(int i = 0; i != 10; ++i)
     {
@@ -33,6 +34,10 @@ void vectorInitialization()
         vecTest3[i] = 42;
     }
 
+    for(vector<int>::iterator index = vecTest4.begin(); index != vecTest4.end(); ++index)
+    {
+        *index = 42;
+    }
     
     cout << "the desired initialized vecTest1 is like:" << endl;
     for(vector<int>::size_type index = 0; index != vecTest1.size(); ++index)
@@ -52,6 +57,13 @@ void vectorInitialization()
     for(vector<int>::size_type index = 0; index != vecTest3.size(); ++index)
     {
         cout << vecTest3[index] << " ";
+    }
+    
+    cout << endl;
+    cout << "the desired initialized vecTest4 is like:" << endl;
+    for(vector<int>::size_type index = 0; index != vecTest4.size(); ++index)
+    {
+        cout << vecTest4[index] << " ";
     }
 
 }
