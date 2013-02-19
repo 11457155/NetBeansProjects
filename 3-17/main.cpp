@@ -123,14 +123,13 @@ void characterToUpperCase()
             if(islower((*iter)[index]))
             {
                 (*iter)[index] = toupper((*iter)[index]);
-                
                   
             }
 
         }
         
         cout << *iter << " ";
-                ++cnt; 
+        ++cnt; 
                 
         if(cnt % 8 == 0)
         {
