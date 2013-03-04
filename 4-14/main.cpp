@@ -27,6 +27,7 @@ void pointerOperation()
     cout << "now start modifying the value of a pointer" << endl;
     cout << "the original value of pointer1 is:" << *ptr1 << endl;
     cout << "the original value of pointer2 is:" << *ptr2 << endl;
+    /* now ptr1 pointsto iVal2, rather than the original variable*/
     ptr1 = ptr2;
     cout << "the modified value of pointer1 is:" << *ptr1 << endl;
     
